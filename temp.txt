@@ -1,3 +1,0 @@
-<!-- <button onclick="drawZipfsGraphForUniqueWords()" class = drawZipfsGraphForUniqueWords>Show tokens per word of unique words</button> -->
-
-// let uniqueWordsButton = document.querySelector("drawZipfsGraphForUniqueWords")

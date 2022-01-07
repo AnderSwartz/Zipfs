@@ -1,0 +1,90 @@
+.drawZipfsGraphForUniqueWords{
+    color: black;
+    margin-top: 300px;
+    position:absolute;
+    margin-top:5%;
+    margin-left: -97.8%;
+    /* width: 80px; */
+    /* height: 50px; */
+    /* size:initial; */
+    background-color: white
+}
+
+.drawZipfsGraphForAllWords{
+    color: black;
+    margin-top: 300px;
+    position:absolute;
+    margin-left: -97.8%;
+    margin-top:10%;
+    /* width: 80px; 
+    height: 50px;
+     size:initial; */
+    background-color: white
+}
+
+.chooseFile{
+    color: black;
+    position:absolute;
+    margin-right: 5%;
+    margin-top:0%;
+}
+
+.h1{
+    color: black;
+    text-emphasis: none;
+    /* position:absolute; */
+    margin-right: 30%;
+    /* margin-left: 40%; */
+    /* margin-top:5%; */
+    font-size: 130%;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.h2{
+    color: black;
+    text-emphasis: none;
+    /* position:absolute; */
+    margin-right: 30%;
+    /* margin-left: 40%; */
+    /* margin-top:5%; */
+    font-size: 130%;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.h3{
+    color: black;
+    text-emphasis: none;
+    /* position:absolute; */
+    margin-right: 30%;
+    /* margin-left: 40%; */
+    /* margin-top:5%; */
+    font-size: 130%;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.h4{
+    color: black;
+    text-emphasis: none;
+    /* position:absolute; */
+    margin-right: 30%;
+    /* margin-left: 40%; */
+    /* margin-top:5%; */
+    font-size: 130%;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h5{
+    color: black;
+    text-emphasis: none;
+    /* position:absolute; */
+    margin-right: 30%;
+    /* margin-left: 40%; */
+    /* margin-top:5%; */
+    font-size: 130%;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}

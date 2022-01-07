@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<link rel="stylesheet" type ="text/css"  href="zipfs.css">
+<html>
+<body>
 
-You can use the [editor on GitHub](https://github.com/AnderSwartz/Zipfs/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    <h1 class = "h1"  id = "h1">
+        <a href="https://en.wikipedia.org/wiki/Zipf%27s_law" target = "_blank">Zipf's law</a> 
+        is a statistical relationship named after the American linguist George Zipf, which describes
+        the inverse relationship between the frequency (tokens) of a word occuring in a given text and its rank
+        in a table of differnt word (type) frequencies.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        Here is a prototypical type - token graph showing a Zipf's law:
+    </h1>
+    <img src="protoZipf.png" alt="protoZipf.png">
+    <h2 class = "h2"  id = "h2">
+        Zipf's law also applies to many other rankings such as income rankings,
+        populations ranks of cities, and neuron firing rates. There are many explanations 
+        for Zipf's law, including the
+        <a href="https://en.wikipedia.org/wiki/Principle_of_least_effort" target = "_blank"> principle of least effort</a>,
+         which Zipf believed was responsible.
+    </h2>
+    <h3 class = "h3"  id = "h3">
+        Here, you can upload any text file (must be a .txt file) and can choose to display a graph of either 
+        the tokens vs types of all words in the text file, or the tokens vs types of all words
+        in the file that are not found in the dictionary (unique words).
+        The project uses Javascript and HTML which I self-taught myself and independently created for this project.
+        It makes use of the efficiency of the O(1) insertion and search for Hashmaps over  O(n) for arrays.
+        I first implemented this project using arrays and it took 2 minutes to compute the graphs, but with Maps it finishes
+        nearly instantaneously. 
+    </h3>
+    <h4 class = "h4"  id = "h4">
+        If you don't have any text files on hand, feel free to download any from 
+         <a href="https://www.gutenberg.org/ebooks/" target = "_blank">Project Gutenberg</a>
+        
+    </h4>
 
-### Markdown
+    
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <pre id="output" > </pre>
+<input type="file"class="chooseFile" name="file" id="file" />
 
-```markdown
-Syntax highlighted code block
+<h5 class = "h5"  id = "h5">
+    After uploading a file, click either of the buttons below to display the corresponding type / token graph. 
+    You must refresh the page to chose the other.
+</h5>
 
-# Header 1
-## Header 2
-### Header 3
+<canvas id="myChart" style="width:100%;max-width:1500px"></canvas>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+<button onclick="drawZipfsGraphForUniqueWords()" class =drawZipfsGraphForUniqueWords>Show tokens per word of unique words</button>
+<button onclick="drawZipfsGraphForAllWords()" class =drawZipfsGraphForAllWords>Show tokens per word of for all words</button>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AnderSwartz/Zipfs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script type="text/javascript" src="Zipfs.js"></script>
+</body>
+</html>
